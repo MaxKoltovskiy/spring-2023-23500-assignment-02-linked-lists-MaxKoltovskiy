@@ -12,10 +12,12 @@ int main()
     std::cout<< "Contains(e): " << l -> contains("e") << "\n";
 
     l -> remove(1);
-    std::cout<< l -> toString() << "\n";
+    std::cout<< "remove(1): ";
+    std::cout<< l -> toString() << "\n\n";
 
     delete l;
-    //std::cout<< l -> toString() << "\n";
+    std::cout<< "toString after deletion: "<< "\n";
+    std::cout<<  l -> toString() << "\n";
 
 
     return 0;
