@@ -100,3 +100,29 @@ void OList::remove(int loc) {
     }
     
 }
+
+int OList::length() {
+    int count = 0;
+    Node *tmp = head;
+    while(tmp != nullptr) {
+        tmp = tmp -> getNext();
+        count++;
+    }
+    return count;
+}
+
+void OList::reverse() {
+    Node *prev = nullptr;
+    Node *curr = head;
+    Node *next = nullptr;
+    
+    while(curr != nullptr) {
+        next = curr -> getNext();
+        curr -> setNext(prev);
+        prev = curr; 
+        curr = next;
+    }
+
+    head = prev;
+   
+}

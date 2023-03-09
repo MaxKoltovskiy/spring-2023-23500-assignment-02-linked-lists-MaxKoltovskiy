@@ -38,11 +38,11 @@ int main()
     std::cout<< "get(2): " << o -> get(2)<< "\n";
     std::cout<< "get(4): " << o -> get(4)<< "\n";
 
-    o -> remove(0);
-    std::cout<< o -> toString();
     o -> remove(3);
     std::cout<< o -> toString();
-    o -> remove(2);
+
+    std::cout<< "\nReversed: \n";
+    o -> reverse();
     std::cout<< o -> toString();
 
 

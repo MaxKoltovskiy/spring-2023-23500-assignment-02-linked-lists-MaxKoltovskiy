@@ -15,5 +15,6 @@ class OList {
         std::string get(int loc);
         void remove(int loc);
 
+        int length();
         void reverse();
 };
