@@ -22,13 +22,13 @@ int main()
 
     OList *o = new OList();
     o -> insert("b");
-    std::cout<< o -> toString();
+    std::cout<< o -> toString() << "\n";
     o -> insert("a");
-    std::cout<< o -> toString();
+    std::cout<< o -> toString() << "\n";
     o -> insert("d");
-    std::cout<< o -> toString();
+    std::cout<< o -> toString() << "\n";
     o -> insert("c");
-    std::cout<< o -> toString();
+    std::cout<< o -> toString() << "\n";
     
     std::cout<< "contains(a): " << o -> contains("a")<< "\n";
     std::cout<< "contains(c): " << o -> contains("c")<< "\n";
@@ -39,11 +39,11 @@ int main()
     std::cout<< "get(4): " << o -> get(4)<< "\n";
 
     o -> remove(3);
-    std::cout<< o -> toString();
+    std::cout<< o -> toString() << "\n";
 
     std::cout<< "\nReversed: \n";
     o -> reverse();
-    std::cout<< o -> toString();
+    std::cout<< o -> toString() << "\n";
 
 
 

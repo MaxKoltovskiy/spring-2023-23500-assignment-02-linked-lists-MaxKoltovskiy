@@ -45,7 +45,7 @@ std::string OList::toString() {
         walker = walker -> getNext();
     }
 
-    result += "nullptr\n";
+    result += "nullptr";
     return result;
 }
 
